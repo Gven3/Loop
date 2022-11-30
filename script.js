@@ -23,16 +23,15 @@ console.log(evens);
 const arr4 = [2, 7, 4, 9, 6, 1, 6, 3];
 // An array is special if every even index contains an even number and every odd index contains an odd number.
 // Log true if an array is special, and false otherwise.
-for (let i = 0; i < arr4.length; i++) {
   function oddAndEven(arr4) {
-    for (i = 0; i < arr4.length; i++) {
+    for (let i = 0; i < arr4.length; i++) {
       if (arr4[i] % 2 !== i % 2) {
         return false;
       }
     }
     return true;
   }
-}
+
 console.log(oddAndEven(arr4));
 
 // exe 4
@@ -65,7 +64,6 @@ if (sum === 0) {
 // write JS code that determines whether or not an array is a factor chain.
 
 const arr5 = [3, 6, 12, 36];
-for (let i = 1; i < arr5.length; i++) {
   function isChain(arr5) {
     for (i = 1; i < arr5.length; i++) {
       if (arr5[i] % arr5[i - 1] !== 0) {
@@ -74,14 +72,14 @@ for (let i = 1; i < arr5.length; i++) {
     }
     return true;
   }
-}
+
 
 console.log(isChain(arr5));
 
 // exe 6
 const arr7 = ["###", "#*#", "###"];
 // write JS code that logs true if an asterisk * is inside a box, and false otherwise.
-for (let i = 0; i < arr7.length; i++) {
+
   function asterisk(arr7) {
     for (i = 0; i < arr7.length; i++) {
       if (arr7[i].includes("*")) {
@@ -90,7 +88,7 @@ for (let i = 0; i < arr7.length; i++) {
     }
     return false;
   }
-}
+
 console.log(asterisk(arr7));
 // exe 7
 const mean7 = 12345;
